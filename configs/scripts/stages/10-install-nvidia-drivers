@@ -11,4 +11,12 @@ set -eu
 source /configs/scripts/others/apt-funcs
 
 
-exit 0
+# -- Install NVIDIA "open" driver packages.
+
+INSTALL_NVIDIA_OPEN_PKGS=(
+    nvidia-open-driver-590
+    nvidia-open-kernel-dkms-590
+    nvidia-alternative-590
+)
+
+install "${INSTALL_NVIDIA_OPEN_PKGS[@]}"
