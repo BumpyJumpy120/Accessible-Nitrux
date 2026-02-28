@@ -20,3 +20,15 @@ INSTALL_NVIDIA_OPEN_PKGS=(
 )
 
 install "${INSTALL_NVIDIA_OPEN_PKGS[@]}"
+
+
+# -- Add ub-device-create binary to enable the creation of NVIDIA device nodes.
+
+FILE_URL="https://raw.githubusercontent.com/Nitrux/storage/refs/heads/master/Other/ub-device-create"
+DEST_DIR="/usr/sbin"
+DEST_FILE="$DEST_DIR/ub-device-create"
+if curl -L -o "$DEST_FILE" "$FILE_URL"; then
+    chmod +x "$DEST_FILE"
+else
+    exit 1
+fi
