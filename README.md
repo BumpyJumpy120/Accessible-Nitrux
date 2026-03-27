@@ -5,7 +5,6 @@
 [![Generic badge](https://img.shields.io/badge/Arch-x64-yellowgreen.svg)](https://shields.io/) 
 
 <p align="center">
-  <img width="128" height="128" src="https://raw.githubusercontent.com/Nitrux/luv-icon-theme/master/Luv/apps/64/live-installer.svg">
 </p>
 
 # Introduction
